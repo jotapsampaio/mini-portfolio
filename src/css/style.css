@@ -1,1 +1,143 @@
-/* família de fontes: 'VT323', monoespaçado (fonte utilizada com o link no html e não o import)*/
+body {
+    background: url('../images/fundo-site.jpg') no-repeat center;
+    background-size: cover;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao {
+    background-color: #070d12;
+    width: 430px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cartao .minhas_informacoes {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* Se o flex direction tiver column vai alinhar horizontalemnte, mais se tiver em row vai alinhar verticalmente. o Oposto da posição */
+}
+
+.cartao .minhas_informacoes img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #02d08f;
+}
+
+.cartao .minhas_informacoes .nome {
+    font-size: 30px;
+}
+
+.cartao .minhas_informacoes .cargo {
+    font-size: 24px;
+    color: #b8bbc5;
+}
+
+.cartao .conteudo {
+    margin-top: 15px;
+}
+
+.cartao .conteudo .abas {
+    display: flex;
+}
+
+.cartao .conteudo .abas .aba img {
+    width: 30px;
+}
+
+.cartao .conteudo .abas .aba {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .conteudo .abas .aba.selecionada {
+    background-color: #262626;
+}
+
+.cartao .conteudo .abas .aba:hover {
+    background-color: #414141;
+}
+
+.cartao .informacoes_abas {
+    background-color: #262626;
+}
+
+.cartao .informacoes_abas .informacao {
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.cartao .informacoes_abas .informacao.selecionada {
+    display: block;
+}
+
+.cartao .informacoes_abas .informacao .sub_titulo {
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+} 
+
+.cartao .informacoes_abas .informacao .descricao {
+    font-size: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: justify;
+    padding-right: 20px;
+    line-height: 25px;
+}
+
+.cartao .informacoes_abas .informacao .descricao span{
+    color: #02d08f;
+    font-weight: bolder;
+}
+
+.cartao .informacoes_abas .informacao .redes_sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.cartao .informacoes_abas .informacao .redes_sociais li a{
+    display: block;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 20px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.cartao .informacoes_abas .informacao .redes_sociais li a:hover {
+    opacity: 0.8;
+}
+
+.cartao .informacoes_abas .informacao .redes_sociais .instagram {
+    background-color: #e126d9;
+}
+
+.cartao .informacoes_abas .informacao .redes_sociais .linkedin {
+    background-color: #1b87bd;
+}
+
+.cartao .informacoes_abas .informacao .redes_sociais .github {
+    background-color: #070d12;
+}
