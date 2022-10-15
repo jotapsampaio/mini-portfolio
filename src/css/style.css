@@ -102,6 +102,17 @@ body {
     line-height: 25px;
 }
 
+::-webkit-scrollbar {    
+    background-color: #02d08f;
+    border-radius: 5px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e126d9;
+    border-radius: 5px;
+}
+
 .cartao .informacoes_abas .informacao .descricao span{
     color: #02d08f;
     font-weight: bolder;
